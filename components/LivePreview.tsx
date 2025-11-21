@@ -276,7 +276,7 @@ export const LivePreview: React.FC<LivePreviewProps> = ({ creation, isLoading, i
             {/* App Preview Panel */}
             <div className={`relative h-full bg-white transition-all duration-500 ${showSplitView && creation.originalImage ? 'w-full md:w-1/2 h-1/2 md:h-full' : 'w-full'}`}>
                  <iframe
-                    title="Gemini Live Preview"
+                    title="Live Preview"
                     srcDoc={creation.html}
                     className="w-full h-full"
                     sandbox="allow-scripts allow-forms allow-popups allow-modals allow-same-origin"
