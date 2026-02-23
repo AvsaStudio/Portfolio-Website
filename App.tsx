@@ -9,6 +9,7 @@ import { Terminal } from './components/Terminal';
 import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
 import { Photography } from './components/Photography';
+import { CodesmithChallenges } from './components/CodesmithChallenges';
 
 const App: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const App: React.FC = () => {
                 <a href="#experience" className="hover:text-white transition-colors">Experience</a>
                 <a href="#python-interactive" className="hover:text-white transition-colors">Python Lab</a>
                 <a href="#photography" className="hover:text-white transition-colors">Darkroom</a>
+                <a href="#js-challenges" className="hover:text-white transition-colors">JS Lab</a>
                 <a href="#projects" className="hover:text-white transition-colors">Projects</a>
                 <a href="#contact" className="hover:text-white transition-colors">Contact</a>
             </div>
@@ -63,6 +65,8 @@ const App: React.FC = () => {
           
           <Photography />
           
+          <CodesmithChallenges />
+
           <Projects />
 
           {/* Contact Section */}

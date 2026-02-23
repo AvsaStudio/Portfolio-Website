@@ -312,7 +312,7 @@ export const Terminal: React.FC = () => {
                         &nbsp;&nbsp;<span className="text-green-400">"""Executing {activeApp} module"""</span><br/>
                         &nbsp;&nbsp;print(<span className="text-orange-300">"Initializing system..."</span>)<br/>
                         &nbsp;&nbsp;<span className="text-blue-300">while</span> active:<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;input_data = await user_input(<span className="text-orange-300">"> "</span>)<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;input_data = await user_input(<span className="text-orange-300">{"> "}</span>)<br/>
                         &nbsp;&nbsp;&nbsp;&nbsp;process_logic(input_data)
                     </div>
 
@@ -334,7 +334,6 @@ export const Terminal: React.FC = () => {
                                 onChange={(e) => setInput(e.target.value)}
                                 className="bg-transparent border-none outline-none text-white w-full placeholder-zinc-700"
                                 placeholder={interactionStep > 0 ? "Waiting for input..." : "Type a command..."}
-                                autoFocus
                                 autoComplete="off"
                             />
                         </form>
